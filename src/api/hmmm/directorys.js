@@ -30,3 +30,7 @@ export const remove = data =>
 
 // 目录状态
 export const changeState = data => createAPI(`/directorys/${data.id}/${data.state}`, 'post', data)
+
+//! 自增
+// 根据学科ID获取目录
+export const directorysList = params => createAPI('/directorys/simple', 'get', params)
