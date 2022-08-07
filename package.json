@@ -10,7 +10,7 @@
   "dependencies": {
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
-    "dayjs": "^1.9.7",
+    "dayjs": "^1.11.4",
     "echarts": "^4.6.0",
     "element-ui": "^2.4.5",
     "font-awesome": "^4.7.0",

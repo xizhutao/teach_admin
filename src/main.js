@@ -36,6 +36,7 @@ axios.interceptors.request.use(
     Promise.reject(error)
   }
 )
+
 Vue.prototype.$http = axios // 黑马面面
 
 Vue.use(dashboard, store)
