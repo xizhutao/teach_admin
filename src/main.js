@@ -9,6 +9,14 @@ import store from './store'
 import i18n from './lang' // Internationalization
 import './icons' // icon
 import * as filters from './filters' // global filters
+
+// 导入富文本编辑器vue-quill-editor
+import VueQuillEditor from 'vue-quill-editor'
+// require styles
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+
 // font-awesome
 import 'font-awesome/css/font-awesome.css'
 
@@ -19,6 +27,7 @@ import axios from 'axios'
 import dashboard from '@/module-dashboard/' // 面板
 import hmmm from '@/module-hmmm/'
 import Cookies from 'js-cookie'
+Vue.use(VueQuillEditor)
 axios.defaults.baseURL = 'http://hmmm-api.itheima.net'
 
 const TokenKey = 'Admin-Token'
