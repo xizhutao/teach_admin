@@ -5,7 +5,7 @@
     <el-row type="flex" class="top">
       <el-col class="instructions">说明：目前支持学科和关键字条件筛选</el-col>
       <el-col class="add-topic">
-        <el-button type="success" icon="el-icon-edit" size="small">新增试题</el-button>
+        <el-button type="success" icon="el-icon-edit" size="small" @click="$router.push({name:'questions-new'})">新增试题</el-button>
       </el-col>
     </el-row>
 
