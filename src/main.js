@@ -12,6 +12,12 @@ import * as filters from './filters' // global filters
 // font-awesome
 import 'font-awesome/css/font-awesome.css'
 
+// 富文本
+import VueQuillEditor from 'vue-quill-editor'
+// vue-quill-editor 样式引入
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
 import axios from 'axios'
 /*
  * 注册 - 业务模块
@@ -19,7 +25,9 @@ import axios from 'axios'
 import dashboard from '@/module-dashboard/' // 面板
 import hmmm from '@/module-hmmm/'
 import Cookies from 'js-cookie'
-axios.defaults.baseURL = 'http://hmmm-api.itheima.net'
+
+Vue.use(VueQuillEditor)
+axios.defaults.baseURL = 'http://liufusong.top:7001/'
 
 const TokenKey = 'Admin-Token'
 axios.interceptors.request.use(
