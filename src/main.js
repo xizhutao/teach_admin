@@ -9,9 +9,23 @@ import store from './store'
 import i18n from './lang' // Internationalization
 import './icons' // icon
 import * as filters from './filters' // global filters
+
+// 导入富文本编辑器vue-quill-editor
+import VueQuillEditor from 'vue-quill-editor'
+// require styles
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+
 // font-awesome
 import 'font-awesome/css/font-awesome.css'
 
+// 富文本
+import VueQuillEditor from 'vue-quill-editor'
+// vue-quill-editor 样式引入
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
 import axios from 'axios'
 /*
  * 注册 - 业务模块
